@@ -1,0 +1,31 @@
+.linha_divisora_rodape {
+    width: 100%;
+    max-width: 500px;
+    height: 1px;
+    margin: 2rem 0 2.5rem 0;
+    position: relative;
+
+    background: linear-gradient(
+        to right, 
+        transparent, 
+        #FFFFFF, 
+        transparent);
+}
+
+.linha_divisora_rodape::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+.linha_divisora_rodape, .rodape {
+    animation: aparecer 0.8s ease-out backwards;
+    animation-delay: 1.2s;
+}
