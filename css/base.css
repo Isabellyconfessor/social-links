@@ -16,7 +16,7 @@
 }
 
 body {
-    background: url('assets/simbolo_fundo.png'), 
+    background: url('/assets/simbolo_fundo.png'), 
                 linear-gradient(to right, var(--primary-color), var(--secondary-color));
     background-repeat: repeat;
     background-blend-mode: overlay;
