@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #09090A;       
+    --card-bg: #121214;        
+
+    --text-color: #FFFFFF;     
+    --text-secondary: #A8A8B3; 
+
+    --primary-color: #162555;
+    --secondary-color: #691bfa;
+}
+
+body {
+    background: url('assets/simbolo_fundo.png'), 
+                linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    background-repeat: repeat;
+    background-blend-mode: overlay;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    padding: 80px 20px;  
+    color: var(--text-color);
+}
+
+main, footer {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
